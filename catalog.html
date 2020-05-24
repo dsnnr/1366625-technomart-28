@@ -59,11 +59,53 @@
        <p>Перфораторы</p>
     </div>
    <section>
-    <div>
-      <p>Фильтр:</p>
-    </div>
-    <p>Цена:</p>
-  </section>
+    <h2>Фильтр:</h2>
+    <form action="https://echo.htmlacademy.ru" method="get">
+    <p>
+    <label for="filter-price">Цена:</label>
+    <input type="range" min="1" max="35000" value="30000" id="filter-price">
+    </p>
+    <fieldset>
+      <legend>Производители:</legend>
+      <ul>
+        <li>
+          <input type="checkbox" name="bosch" id="filter-bosch" checked>
+          <label for="filter-bosch">Bosch</label>
+        </li>
+        <li>
+          <input type="checkbox" name="interscol" id="filter-interscol">
+          <label for="filter-interscol">Интерскол</label>
+        </li>
+        <li>
+          <input type="checkbox" name="makita" id="filter-makita" checked>
+          <label for="filter-makita">Makita</label>
+        </li>
+        <li>
+          <input type="checkbox" name="dewalt" id="filter-dewalt">
+          <label for="filter-dewalt">Dewalt</label>
+        </li>
+        <li>
+          <input type="checkbox" name="hitachi" id="filter-hitachi">
+          <label for="filter-hitachi">Hitachi</label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>Питание:</legend>
+      <ul>
+        <li>
+          <input type="radio" name="power-supply" value="battery-powered" id="filter-battery" checked>
+          <label for="filter-battery">Аккумуляторные</label>
+        </li>
+        <li>
+          <input type="radio" name="power-supply" value="mains-powered" id="filter-mains" checked>
+          <label for="filter-mains">Сетевые</label>
+        </li>
+      </ul>
+    </fieldset>
+    <button type="submit">Показать</button>
+    </form>
+   </section>
   <section>
   <h2>Список перфораторов</h2>
   <ul>
@@ -158,6 +200,20 @@
       <button type="button">В закладки</button>        
     </li>
   </ul>
+  <ul>
+    <button type="button">1</button>
+    <button type="button">2</button>
+    <button type="button">3</button>
+    <button type="button">Следующая</button>
+  </ul>
+  </section>
+  <section>
+    <h2>Пара слов о перфораторах</h2>
+    <p>
+      Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
+      Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В <br>
+      ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+    </p>
   </section>
   </main>
   <footer>
@@ -213,5 +269,16 @@
       </section>
     </div>
   </footer>
+
+  <section>
+    <p>Товар добавлен в корзину!</p>
+    <div>
+      <button type="button">Оформить заказ</button>
+      <button type="button">Продолжить покупки</button>
+    </div>
+    <button type="button">Закрыть</button>
+  </section>
+
+
   </body>
 </html>
